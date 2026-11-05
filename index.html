@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Техника смелости — ИИ-тренер для тебя</title>
+<meta name="description" content="ИИ-тренер в телефоне следит за техникой. Тренировки дома, без инвентаря, только вы и ИИ.">
+<meta property="og:title" content="Техника смелости — ИИ-тренер для женщин">
+<meta property="og:description" content="Ты сильнее, чем думаешь. Просто начни.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Philosopher:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="progress" id="pg" aria-hidden="true"></div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="flower" viewBox="0 0 100 100"><g fill="currentColor" fill-opacity=".55"><ellipse cx="50" cy="26" rx="12" ry="24"/><ellipse cx="50" cy="26" rx="12" ry="24" transform="rotate(60 50 50)"/><ellipse cx="50" cy="26" rx="12" ry="24" transform="rotate(120 50 50)"/><ellipse cx="50" cy="26" rx="12" ry="24" transform="rotate(180 50 50)"/><ellipse cx="50" cy="26" rx="12" ry="24" transform="rotate(240 50 50)"/><ellipse cx="50" cy="26" rx="12" ry="24" transform="rotate(300 50 50)"/></g><circle cx="50" cy="50" r="11" fill="currentColor"/></symbol>
+  <symbol id="flower2" viewBox="0 0 200 200"><defs><path id="pa" d="M100 100C76 78 78 38 100 6C122 38 124 78 100 100z"/><path id="pb" d="M100 100C87 86 88 62 100 42C112 62 113 86 100 100z"/></defs><g fill="currentColor" fill-opacity=".3" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"><use href="#pa"/><use href="#pa" transform="rotate(30 100 100)"/><use href="#pa" transform="rotate(60 100 100)"/><use href="#pa" transform="rotate(90 100 100)"/><use href="#pa" transform="rotate(120 100 100)"/><use href="#pa" transform="rotate(150 100 100)"/><use href="#pa" transform="rotate(180 100 100)"/><use href="#pa" transform="rotate(210 100 100)"/><use href="#pa" transform="rotate(240 100 100)"/><use href="#pa" transform="rotate(270 100 100)"/><use href="#pa" transform="rotate(300 100 100)"/><use href="#pa" transform="rotate(330 100 100)"/></g><g fill="currentColor" fill-opacity=".6" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><use href="#pb" transform="rotate(15 100 100)"/><use href="#pb" transform="rotate(60 100 100)"/><use href="#pb" transform="rotate(105 100 100)"/><use href="#pb" transform="rotate(150 100 100)"/><use href="#pb" transform="rotate(195 100 100)"/><use href="#pb" transform="rotate(240 100 100)"/><use href="#pb" transform="rotate(285 100 100)"/><use href="#pb" transform="rotate(330 100 100)"/></g><circle cx="100" cy="100" r="30" fill="none" stroke="currentColor" stroke-width="4" stroke-dasharray="1 9.4" stroke-linecap="round"/><circle cx="100" cy="100" r="20" fill="currentColor"/><circle cx="100" cy="100" r="9" fill="var(--light)"/></symbol>
+  <symbol id="p-squat" viewBox="0 0 120 160"><g fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"><circle cx="68" cy="36" r="10" fill="currentColor" stroke="none"/><path d="M60 32q-14 0-18 18M46 90L60 54M62 58L102 60M46 90L88 94L80 144L98 144"/><path d="M28 152H114" opacity=".3"/></g></symbol>
+</svg>
+
+<header class="t-dark">
+  <div class="wrap bar">
+    <a class="logo" href="#top" aria-label="Техника смелости — на главную"><svg viewBox="0 0 100 100" aria-hidden="true"><use href="#flower"/></svg>Техника смелости</a>
+    <a class="btn btn-mini" href="#download">Скачать</a>
+    <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    <nav class="menu" id="menu" aria-label="Основная навигация">
+      <a class="link" href="#about">Как работает</a>
+      <a class="link" href="#gallery">Фото</a>
+      <a class="link" href="#pricing">Тарифы</a>
+      <a class="link" href="#login">Войти</a><!-- заменить -->
+      <a class="btn" href="#download">Скачать приложение</a><!-- заменить -->
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero t-dark">
+    <div class="hero-bg" aria-hidden="true"><img src="bruce-mars-HHXdPG_eTIQ-unsplash.jpg" alt=""></div>
+    <svg class="deco hside" data-parallax="0.06" style="width:160px;left:-55px;top:16%;color:var(--pink);opacity:.3" viewBox="0 0 100 100" aria-hidden="true"><use href="#flower"/></svg>
+    <svg class="deco hside" data-parallax="0.1" style="width:110px;left:5%;bottom:9%;color:var(--light);opacity:.14;animation-duration:36s" viewBox="0 0 200 200" aria-hidden="true"><use href="#flower2"/></svg>
+    <svg class="deco hside" data-parallax="0.08" style="width:180px;right:-65px;top:22%;color:var(--pink);opacity:.26;animation-direction:reverse" viewBox="0 0 200 200" aria-hidden="true"><use href="#flower2"/></svg>
+    <svg class="deco hside" data-parallax="0.12" style="width:100px;right:6%;bottom:12%;color:var(--light);opacity:.16;animation-duration:36s" viewBox="0 0 100 100" aria-hidden="true"><use href="#flower"/></svg>
+    <div class="wrap">
+      <div class="emblem" data-anim="zoom"><svg viewBox="0 0 200 200" aria-hidden="true"><use href="#flower2"/></svg></div>
+      <h1 class="quote" data-anim="up" style="--d:.1s"><span class="l1">Смелость — это техника.</span><span class="l2">Ей можно научиться.</span></h1>
+      
+      <p class="lead" data-anim="up" style="--d:.2s">ИИ-тренер в телефоне следит за техникой .</p>
+      <div class="btn-row" data-anim="up" style="--d:.3s">
+        <a class="btn" href="#download">Скачать приложение</a>
+        <a class="btn btn-ghost" href="#about">Как это работает</a>
+      </div>
+      
+    </div>
+  </section>
+
+
+  <section id="about" class="layer t-dark">
+    <svg class="deco" data-parallax="0.08" style="width:260px;right:-80px;top:40px;color:var(--pink);opacity:.25" viewBox="0 0 100 100" aria-hidden="true"><use href="#flower"/></svg>
+    <div class="wrap">
+      <div class="sec-head center" data-anim="up"><h2>Фитнес без страха</h2><p class="lead" style="margin-inline:auto">ИИ видит движения через камеру и бережёт от травм. Как тренер, который всегда рядом.</p></div>
+      <div class="grid three">
+        <article class="card" data-anim="left"><div class="ico"><svg viewBox="0 0 48 48"><rect x="5" y="13" width="38" height="26" rx="6"/><circle cx="24" cy="26" r="7"/><path d="M16 13l3-5h10l3 5"/></svg></div><h3>Камера видит</h3><p>Поставьте телефон на пол. Всё тело в кадре.</p></article>
+        <article class="card" data-anim="up" style="--d:.15s"><div class="ico"><svg viewBox="0 0 48 48"><path d="M22 6l4 11 11 4-11 4-4 11-4-11-11-4 11-4z"/><path d="M38 30v8M34 34h8"/></svg></div><h3>ИИ считает углы</h3><p>Сравнивает позу с безопасной техникой.</p></article>
+        <article class="card" data-anim="right" style="--d:.3s"><div class="ico"><svg viewBox="0 0 48 48"><path d="M8 10h32v22H20l-9 8v-8H8z"/><path d="M16 21l5 5 10-9"/></svg></div><h3>Голосовой помощник</h3><p>Голос поправит движение прямо в подходе.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="benefits" class="layer soft from-dark t-light">
+    <svg class="deco" data-parallax="0.10" style="width:200px;left:-70px;top:30px;color:var(--pink);opacity:.5" viewBox="0 0 100 100" aria-hidden="true"><use href="#flower"/></svg>
+    <div class="wrap">
+      <div class="sec-head" data-anim="up"><h2>Почему с нами спокойно</h2></div>
+      <div class="grid cols">
+        <article class="card" data-anim="up"><div class="ico"><svg viewBox="0 0 48 48"><path d="M8 40h32M8 40L30 10M24 40A16 16 0 0 0 17.5 27"/></svg></div><h3>Контроль углов</h3><p>Предупредим о рискованном движении.</p></article>
+        <article class="card" data-anim="up" style="--d:.12s"><div class="ico"><svg viewBox="0 0 48 48"><path d="M24 40S6 29 6 17a9 9 0 0 1 18-2 9 9 0 0 1 18 2c0 12-18 23-18 23z"/><path d="M12 24h8l3-6 4 10 3-4h6"/></svg></div><h3>Под вас</h3><p>План учитывает уровень и самочувствие.</p></article>
+        <article class="card" data-anim="up" style="--d:.24s"><div class="ico"><svg viewBox="0 0 48 48"><path d="M12 18v12M8 21v6M36 18v12M40 21v6M12 24h24M6 42L42 6"/></svg></div><h3>Без инвентаря</h3><p>Нужен только коврик.</p></article>
+        <article class="card" data-anim="up" style="--d:.36s"><div class="ico"><svg viewBox="0 0 48 48"><path d="M24 5l14 5v11c0 9-6 16-14 20-8-4-14-11-14-20V10z"/><rect x="18" y="22" width="12" height="9" rx="2"/><path d="M20 22v-3a4 4 0 0 1 8 0v3"/></svg></div><h3>Только вы и ИИ</h3><p>Видео обрабатывается на устройстве.</p><!-- проверить формулировку --></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="layer t-pink">
+    <svg class="deco" data-parallax="0.08" style="width:220px;left:-70px;bottom:20px;color:var(--dark);opacity:.14" viewBox="0 0 100 100" aria-hidden="true"><use href="#flower"/></svg>
+    <div class="wrap">
+      <div class="sec-head center" data-anim="up"><h2>Тренировки в кадре</h2><p class="lead" style="margin-inline:auto">Немного атмосферы: движение, растяжка и работа над техникой.</p></div>
+      <div class="gallery">
+        <figure data-anim="up"><figcaption>Разминка</figcaption><img src="bruce-mars-gJtDg6WfMlQ-unsplash.jpg" alt="Тренировка дома с ковриком" loading="lazy"></figure>
+        <figure data-anim="up" style="--d:.08s"><figcaption>Сила</figcaption><img src="bruce-mars-WGN6ZEFEZbs-unsplash.jpg" alt="Силовое упражнение с гантелями" loading="lazy"></figure>
+        <figure data-anim="up" style="--d:.16s"><figcaption>Баланс</figcaption><img src="mor-shani-3IWJE1bWxdw-unsplash.jpg" alt="Упражнение на баланс и растяжку" loading="lazy"></figure>
+        <figure data-anim="up" style="--d:.08s"><figcaption>Зал</figcaption><img src="logan-weaver-lgnwvr-9D_rUDe7xvA-unsplash.jpg" alt="Тренировка в зале" loading="lazy"></figure>
+        <figure data-anim="up" style="--d:.16s"><figcaption>Боевой дух</figcaption><img src="ernest-brillo-bO3lEGHbk2M-unsplash.jpg" alt="Боксёрская тренировка" loading="lazy"></figure>
+        <figure data-anim="up" style="--d:.24s"><figcaption>Поддержка</figcaption><img src="beta-boulders-2qK9YbtIrc8-unsplash.jpg" alt="Боулдеринг на скалодроме" loading="lazy"></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing" class="layer t-dark">
+    <svg class="deco" data-parallax="0.07" style="width:240px;right:-80px;bottom:30px;color:var(--pink);opacity:.22" viewBox="0 0 100 100" aria-hidden="true"><use href="#flower"/></svg>
+    <div class="wrap">
+      <div class="sec-head" data-anim="up"><h2>Выберите тариф</h2></div>
+      <!-- заменить на реальные цены и состав -->
+      <div class="grid three">
+        <article class="card price-card" data-anim="up"><h3>Free</h3><div class="price">0 ₽ <small>демо</small></div><ul><li>3 тренировки</li><li>Базовые подсказки</li></ul><a class="btn btn-ghost btn-block" href="#download">Выбрать Free</a></article>
+        <article class="card price-card best t-pink" data-anim="up" style="--d:.15s"><span class="badge">Выбор большинства</span><h3>Premium</h3><div class="price">790 ₽ <small>/ мес</small></div><ul><li>Полный ИИ-контроль</li><li>Личный план</li><li>Отчёты о прогрессе</li></ul><a class="btn btn-block" href="#download">Выбрать Premium</a></article>
+        <article class="card price-card" data-anim="up" style="--d:.3s"><h3>Premium + Expert</h3><div class="price">1 990 ₽ <small>/ мес</small></div><ul><li>Всё из Premium</li><li>Живой нутрициолог</li><li>Чат с экспертом</li></ul><a class="btn btn-ghost btn-block" href="#download">Выбрать Expert</a></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="stories" class="layer soft from-dark t-light">
+    <div class="wrap">
+      <div class="sec-head" data-anim="up"><h2>Меняется осанка — растёт уверенность</h2></div>
+      <div class="stories">
+        <div data-anim="left">
+          <div class="ba" role="group" aria-label="Фотографии разминки и растяжки">
+            <figure><figcaption>Разминка</figcaption><img src="девушка потягивается.jpg" alt="Спортсменка разминается у воды" loading="lazy"></figure>
+            <figure><figcaption>Растяжка</figcaption><img src="брюнетка в розовых носках в позе бабочки.png" alt="Спортсменка выполняет растяжку сидя" loading="lazy"></figure>
+          </div>
+          
+        </div>
+        <div class="vcard" data-anim="right">
+          <img src="девушка надевает кроссовки.png" alt="Девушка надевает кроссовки перед тренировкой" loading="lazy">
+          <p>Подготовка к тренировке</p>
+        </div>
+      </div>
+      <blockquote data-anim="zoom">
+        <svg class="deco" data-parallax="0.05" viewBox="0 0 100 100" aria-hidden="true"><use href="#flower"/></svg>
+        <!-- заменить на реальную цитату и имя врача, с его согласия -->
+        <p>«Контроль техники помогает бережнее нагружать суставы. Особенно важно это для женской биомеханики.» (текст-заглушка)</p>
+        <cite>[Имя Фамилия, специальность]</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <section id="contacts" class="layer t-dark">
+    <div class="wrap contact-grid">
+      <div data-anim="left">
+        <h2>Вопросы и ответы</h2>
+        <details><summary>Нужен ли инвентарь?</summary><p>Нет, достаточно коврика и телефона.</p></details>
+        <details><summary>Я новичок. Подойдёт?</summary><p>Да, нагрузка подбирается под ваш уровень.</p></details>
+        <details><summary>Где хранится видео?</summary><p>Обработка идёт на вашем устройстве (заглушка, уточните формулировку).</p></details>
+        <details><summary>Как отменить подписку?</summary><p>В настройках приложения в любой момент.</p></details>
+      </div>
+      <div class="card contact-card t-pink" data-anim="right">
+        <svg class="deco" data-parallax="0.11" viewBox="0 0 100 100" aria-hidden="true"><use href="#flower"/></svg>
+        <h3>Мы на связи</h3>
+        <a class="btn" href="#chat">Чат поддержки</a><!-- заменить -->
+        <a class="mail" href="mailto:business@example.com">businessgym@example.com</a><!-- заменить -->
+        <div class="social">
+          <a href="#telegram" aria-label="Telegram"><svg viewBox="0 0 24 24"><path d="M21 4L3 11l6 2 2 6 3-4 5 3z"/></svg></a>
+          <a href="#instagram" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="5"/><circle cx="12" cy="12" r="3.5"/></svg></a>
+          <a href="#youtube" aria-label="YouTube"><svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12" rx="4"/><path d="M10 9.5v5l4.5-2.5z"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer id="download" class="layer t-pink">
+  <svg class="deco" data-parallax="0.06" viewBox="0 0 100 100" aria-hidden="true"><use href="#flower"/></svg>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <a class="logo" href="#top"><svg viewBox="0 0 100 100" aria-hidden="true" style="color:var(--dark)"><use href="#flower"/></svg>Техника смелости</a>
+        <div class="stores">
+          <a class="store" href="#appstore"><small>Загрузите в</small><b>App Store</b></a><!-- заменить -->
+          <a class="store" href="#googleplay"><small>Доступно в</small><b>Google Play</b></a><!-- заменить -->
+        </div>
+      </div>
+      <nav aria-label="Дополнительные ссылки"><a href="#blog">Блог</a><a href="#privacy">Политика конфиденциальности</a></nav>
+    </div>
+    <div class="legal"><p>© 2026 «Техника смелости»</p><p>Приложение не заменяет консультацию врача. Результаты индивидуальны.</p></div>
+    <p class="credit">Created by Margarita M. R. </p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var b=document.getElementById('burger'),m=document.getElementById('menu');
+  function set(o){m.classList.toggle('open',o);b.setAttribute('aria-expanded',o);b.setAttribute('aria-label',o?'Закрыть меню':'Открыть меню')}
+  b.addEventListener('click',function(){set(!m.classList.contains('open'))});
+  m.addEventListener('click',function(e){if(e.target.closest('a'))set(false)});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')set(false)});
+
+  var still=matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // появление при прокрутке: повторяется и вниз, и вверх
+  var els=document.querySelectorAll('[data-anim]');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){
+      if(e.intersectionRatio>=.15)e.target.classList.add('in');
+      else if(!e.isIntersecting)e.target.classList.remove('in');
+    })},{threshold:[0,.15]});
+    els.forEach(function(el){io.observe(el)});
+  }else{els.forEach(function(el){el.classList.add('in')})}
+
+  // навигация: «плавающая» подсветка и подсветка текущего раздела
+  var pill=document.createElement('span');pill.className='pill';pill.setAttribute('aria-hidden','true');m.insertBefore(pill,m.firstChild);
+  var lk=[].slice.call(m.querySelectorAll('a.link')),act=null;
+  function place(a){if(!a||innerWidth<860){pill.style.opacity=0;return}pill.style.left=a.offsetLeft+'px';pill.style.width=a.offsetWidth+'px';pill.style.opacity=1}
+  lk.forEach(function(a){a.addEventListener('mouseenter',function(){place(a)});a.addEventListener('focus',function(){place(a)})});
+  m.addEventListener('mouseleave',function(){place(act)});m.addEventListener('focusout',function(){place(act)});
+  function spy(){var y=innerHeight*.4,n=null;lk.forEach(function(a){var s=document.querySelector(a.getAttribute('href'));if(s&&s.id){var r=s.getBoundingClientRect();if(r.top<y&&r.bottom>y)n=a}});if(n!==act){act=n;lk.forEach(function(a){a.classList.toggle('on',a===act)});place(act)}}
+  addEventListener('scroll',spy,{passive:true});addEventListener('resize',spy);spy();
+
+  // заголовок: разбиваем на буквы для анимации
+  var q=document.querySelector('.quote');
+  if(q){var sp=[].slice.call(q.querySelectorAll(':scope>span')),n=0;q.setAttribute('aria-label',sp.map(function(s){return s.textContent}).join(' '));
+    sp.forEach(function(s){s.setAttribute('aria-hidden','true');s.innerHTML=s.textContent.split(' ').map(function(w){return '<span class="w">'+w.split('').map(function(c){return '<span class="ch" style="--i:'+(n++)+'">'+c+'</span>'}).join('')+'</span>'}).join(' ')})}
+
+  // дополнительные цветы: на широком экране их больше (видимость задаёт CSS)
+  document.querySelectorAll('.hero,.layer').forEach(function(s,i){
+    [['a','right:-2vw',(7+(i*31)%20)+'%'],['b','left:-2vw',(12+(i*29)%20)+'%'],['c','left:-2vw',(61+(i*23)%20)+'%'],['d','right:-2vw',(65+(i*19)%18)+'%']].forEach(function(p,k){
+      var big=k%2===0,f=document.createElementNS('http://www.w3.org/2000/svg','svg');
+      f.setAttribute('viewBox',big?'0 0 200 200':'0 0 100 100');f.setAttribute('aria-hidden','true');f.setAttribute('class','xf '+p[0]);
+      f.style.cssText=p[1]+';top:'+p[2]+(k%2?';animation-direction:reverse':'')
+        +';color:'+(k%2?'var(--fg)':'var(--pink)')+';opacity:'+(.1+k*.06).toFixed(2)
+        +';width:calc(clamp(90px,9vw,190px)*'+[1,1.3,.72,1.05][k]+')';
+      f.setAttribute('data-parallax',String(.05+(i*7+k*5)%4*.03));
+      f.innerHTML='<use href="'+(big?'#flower2':'#flower')+'"/>';
+      s.insertBefore(f,s.firstChild);
+    });
+  });
+
+  // параллакс: элементы с data-parallax получают класс .parallax и смещаются с разной скоростью
+  var fl=[].slice.call(document.querySelectorAll('[data-parallax]'));
+  function drift(){
+    if(still)return;
+    fl.forEach(function(f){
+      var r=f.parentNode.getBoundingClientRect(),d=r.top+r.height/2-innerHeight/2;
+      var sp=parseFloat(f.dataset.parallax)||.06;
+      f.classList.toggle('parallax',r.bottom>-innerHeight&&r.top<innerHeight*2);
+      f.style.translate='0 '+(-d*sp).toFixed(1)+'px';
+    });
+  }
+
+  // наклон карточек за курсором
+  if(matchMedia('(hover:hover)').matches&&!still){
+    document.querySelectorAll('.card').forEach(function(c){
+      c.addEventListener('pointermove',function(e){var r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5,a=Math.hypot(x,y)*14;
+        c.style.setProperty('--mx',(x+.5)*100+'%');c.style.setProperty('--my',(y+.5)*100+'%');
+        c.style.rotate=a>.3?(-y)+' '+x+' 0 '+a+'deg':'none'});
+      c.addEventListener('pointerleave',function(){c.style.rotate='none'});
+    });
+  }
+
+  var pg=document.getElementById('pg'),h=document.documentElement;
+  addEventListener('scroll',function(){
+    var t=h.scrollHeight-h.clientHeight;pg.style.transform='scaleX('+(t>0?h.scrollTop/t:0)+')';
+  },{passive:true});
+})();
+</script>
+</body>
+</html>
