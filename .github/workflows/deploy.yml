@@ -31,7 +31,3 @@ jobs:
         id: deployment 
         uses: actions/deploy-pages@v4
 
-        steps:
-      - uses: actions/checkout@v4
-      - name: Simulate build
-        run: echo "Build passed"
